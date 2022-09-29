@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="stylesheet" href="./email.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <section class="main">
+        <header>
+            <img src="./note.png" class="note">
+            <ul class="navigation">
+                    <li><a href="./email.html">تسجيل دخول</a></li>
+                    <li><a href="./home.html">صفحه الرئيسيه</a></li>
+                    <li><a href="./search.html">البحث</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <img src="./book.png" class="book">
+        </div>
+    
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title" style="text-align:center">تسجيل الدخول</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" style="text-align:center" autofocus placeholder="اسم المستخدم او البريد الإلكتروني">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" style="text-align:center" autofocus placeholder="الرقم السري">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit"><a href="./profile.html">استمر</a></button>
+            
+            <p class="form__text">
+                <a class="form__link" href="./createAccount" id="linkCreateAccount">ليس لديك حساب؟ إنشاء حساب</a>
+            </p>
+            <p class="form__text">
+                <a href="./home.html" class="-btn">تصفح كزائر</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">إنشاء حساب</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" style="text-align:center" autofocus placeholder="اسم المستخدم">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" style="text-align:center" autofocus placeholder="عنوان البريد الإلكتروني">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" style="text-align:center" autofocus placeholder="الرقم السري">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" style="text-align:center" autofocus placeholder="اعد كتابه الرقم السري">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit"><a href="./profile.html">استمر</a></button>
+            
+            <p class="form__text">
+                <a class="form__link" href="./login" id="linkLogin">هل لديك حساب؟ تسجيل دخول</a>
+            </p>
+                <p class="form__text">
+                <a href="./home.html" class="-btn">تصفح كزائر</a>
+            </p>
+        </form>
+    </div>
+</header>
+</section>
+      <script src="./script.js"></script>
+</body>
+</html>
